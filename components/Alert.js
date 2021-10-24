@@ -6,7 +6,7 @@ const Alert = ({message}) => {
     <div className={` ${styles.alertToast} fixed bottom-6 right-0 m-2 w-25 md:w-full max-w-sm`}>
       <input type="checkbox" className="hidden" id="footertoast"/>
 
-      <label className ="close cursor-pointer flex items-start justify-between w-full p-2 bg-white h-16 rounded shadow-lg text-black" title="close" htmlFor="footertoast">
+      <label className ="close cursor-pointer flex items-start justify-between w-full p-4 bg-white h-20 rounded shadow-lg text-black" title="close" htmlFor="footertoast">
       {message}
 
       <svg className ="fill-black text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
