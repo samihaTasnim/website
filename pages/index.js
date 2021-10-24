@@ -3,31 +3,26 @@ import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
 import Image from 'next/image'
 import me from '../public/portfolio-img.png'
-import javascript from '../public/icons8-javascript.svg';
-import typescript from '../public/icons8-typescript.svg';
-import react from '../public/icons8-react.svg';
-import html from '../public/html.svg';
-import node from '../public/nodejs.svg';
-import mongodb from '../public/mongodb.svg';
-import css from '../public/css.svg';
-import chrome from '../public/chrome.svg'
-import vsCode from '../public/vs-code.svg'
-import redux from '../public/redux.svg'
-import tailwind from '../public/tailwindcss.svg'
-import bootstrap from '../public/bootstrap.svg'
-import firebase from '../public/firebase.svg'
-import npm from '../public/npm.svg'
-import git from '../public/icons8-git.svg'
-import nextjs from '../public/next-js.svg'
-import GlowingButton from '../components/GlowingButton';
-
+import Aboutme from '../components/Aboutme';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import githubLogo from '../public/icons8-github.svg'
+import linkedinLogo from '../public/icons8-linkedin.svg'
+import discordLogo from '../public/icons8-discord.svg'
+import { useState } from 'react';
+import Alert from '../components/Alert';
 
 export default function Home() {
 
-  const skillsArray = [bootstrap, node, mongodb, html, css, firebase, vsCode, chrome, git, npm]
-  const languageArray = [javascript, typescript, html, css]
-  const FrameworksArray = [react, nextjs, redux, bootstrap, tailwind, node, mongodb]
-  const toolsArray = [vsCode, firebase, git, chrome, npm]
+  const [showAlert, setShowAlert] = useState(false)
+  
+  const copydiscordUsername = () => {
+    navigator.clipboard.writeText("samm#6276")
+    setShowAlert(true)
+    setTimeout(function(){
+      setShowAlert(false)
+   }, 3000);
+  }
 
   return (
     <>
@@ -38,74 +33,44 @@ export default function Home() {
 
       {/* Hero Section */}
 
-      <div className="pt-8 md:pt-16 lg:pt-32 grid grid-cols-1 md:grid-cols-3 gap-0">
+      <div className="pt-4 md:pt-12 lg:pt-24 grid grid-cols-1 md:grid-cols-3 gap-0">
         <div className="mt-2 md:mt-8 col-span-2 p-8">
           <h1 className="mb-4 text-3xl lg:text-6xl font-bold">Hello, I'm</h1>
           <Typed
-            strings={['Samiha Tasnim aka Sam', 'A Full Stack Developer', 'A Front-end Developer', 'In love with TypeScript']}
-            typeSpeed={40} loop className="text-2xl lg:text-6xl font-bold"
+            strings={['Samiha Tasnim aka Sam', 'A Full Stack Developer']}
+            typeSpeed={40} className="text-2xl lg:text-6xl font-bold"
           />
           <br />
           <br />
-          <small className="text-lg text-gray-500">I love everything that looks nice to the human eye. Curating websites so that users doesn't want to leave at all! Currently, I’m focused on building UI parts, fixing and adding extra features at Flatnkeys.</small>
+          <small className="text-lg text-gray-500">I love everything that looks nice to the human eye. Curating websites so that users doesn't want to leave the website at all! Currently, I’m focused on building UI parts, fixing bugs and adding extra features at Flatnkeys.</small>
+          <div className="mt-4">
+          <a href="https://github.com/samihaTasnim" target="_blank" className="mr-2"><Image src={githubLogo}></Image></a>
+          <a href="https://www.linkedin.com/in/samiha-tasnim/" className="mr-2" target="_blank"><Image src={linkedinLogo}></Image> </a>
+          <span className="cursor-pointer" onClick={copydiscordUsername }><Image src={discordLogo}></Image></span>
+          </div>
         </div>
-        <div className="flex justify-start">
-          <Image src={me} alt="My svg image" width={400} height={430} />
+        <div className="flex justify-start -mt-12 md:mt-0">
+          <Image src={me} alt="My svg image" />
         </div>
       </div>
 
-      {/* Skills and technologies */}
-
-      <div className="p-16 lg:pt-32">
-        <h4 className="text-center text-3xl font-medium">What do I bring to the table?</h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-          <div>
-            <p className="text-2xl text-center">Languages I use -</p>
-          </div>
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
-            {
-              languageArray.map((x, i) => (
-                <Image src={x}></Image>
-              ))
-            }
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-          <div>
-            <p className="text-2xl text-center">Frameworks and Libraries -</p>
-          </div>
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
-            {
-              FrameworksArray.map((x, i) => (
-                <Image src={x}></Image>
-              ))
-            }
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-          <div>
-            <p className="text-2xl text-center">Other tools -</p>
-          </div>
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
-            {
-              toolsArray.map((x, i) => (
-                <Image src={x}></Image>
-              ))
-            }
-          </div>
-        </div>
-        <div className="mt-12 text-center">
-          <GlowingButton text="Visit my github" link="https://github.com/samihaTasnim"></GlowingButton>
-        </div>
-      </div>
+      {/* About me section */}
+      <Aboutme></Aboutme>
 
       {/* Projects */}
 
-      <section className="p-16 md:pt-32">
-        <h4 className="text-center text-3xl font-medium">Some Things I’ve Built</h4>
-
+      <section className="m-16 md:mt-32" id="projects">
+        <h3 className="text-2xl font-bold">Some Things I’ve Built </h3>
+        <Projects></Projects>
       </section>
 
+      {/* contact me section */}
+
+    <section id="contact-me">
+      <Contact></Contact>
+    </section>
+
+    { showAlert && <Alert message="Copied my discord user name"></Alert>}
     </>
   )
 }

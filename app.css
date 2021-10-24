@@ -8,3 +8,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */ 
 }
+
+html {
+  scroll-behavior: smooth;
+}

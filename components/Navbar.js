@@ -11,7 +11,7 @@ const Navbar = () => {
   const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-white transition ease transform duration-300`;
 
   return (
-    <nav className="grid grid-cols-3 gap-4 p-4 md:p-0">
+    <nav className="grid grid-cols-3 gap-4 p-4 md:p-0 ">
 
       <div className="flex items-center flex-shrink-0 text-white mr-6 col-span-2 lg:col-span-1">
         <Image src={logo} alt="logo of my initial" width={40} height={40} /> &nbsp; &nbsp; &nbsp;
@@ -41,20 +41,17 @@ const Navbar = () => {
 
       <div className={`lg:flex ${isOpen ? "block" : "hidden"} col-span-2 lg:place-self-end`}>
         <div className="text-base lg:flex-grow">
-          <Link href="/about-me" >
-            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4  cursor-pointer"> About me</span>
+          <Link href="#about-me" >
+            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer"> About me</span>
           </Link>
-          <Link href="/projects" >
-            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 cursor-pointer">Projects</span>
+          <Link href="#projects" >
+            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer">Projects</span>
           </Link>
-          <Link href="/contact-me">
-            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 cursor-pointer">Contact me</span>
+          <Link href="#contact-me">
+            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer">Contact me</span>
           </Link>
-          <GlowingButton className="px-2 xl:pl-3" text='Download Resume' link="/Samiha-Tasnim-Resume.pdf" fileName="/Samiha-Tasnim-Resume.pdf"></GlowingButton>
+          <GlowingButton className="px-2 xl:pl-3" text='Resume' downloadResume></GlowingButton>
         </div>
-        {/* <div className="px-2"> */}
-
-        {/* </div> */}
       </div>
     </nav>
   );
