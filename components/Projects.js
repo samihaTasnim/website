@@ -8,6 +8,7 @@ import Image from 'next/image'
 import gitIcon from '../public/icons8-github.svg';
 import linkIcon from '../public/external-link.svg';
 import OutlinedButton from './OutlinedButton';
+import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
  
@@ -104,7 +105,8 @@ const Projects = () => {
     <section>
       {
         projectsArray1.map(x => (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center" key={x.id}>
+          <Fade bottom key={x.id}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
               <Image className="object-cover rounded-lg h-full opacity-50 hover:opacity-100 " src={x.img}></Image>
             <div className=" md:px-0">
             <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
@@ -124,11 +126,13 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          </Fade>
         ))
       }
       { showExtraProjects && 
         projectsArray2.map(x => (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center" key={x.id}>
+          <Fade bottom key={x.id}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
               <Image className="object-cover h-full rounded-lg opacity-50 hover:opacity-100 " src={x.img}></Image>
             <div className=" md:px-0">
             <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
@@ -148,6 +152,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          </Fade>
         ))
       }
       <div className="mt-8 text-center">

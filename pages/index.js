@@ -70,7 +70,7 @@ export default function Home() {
       <Contact></Contact>
     </section>
 
-    { showAlert && <Alert message="Copied my discord user name"></Alert>}
+    { showAlert && <Alert message="You copied my discord user name!"></Alert>}
     </>
   )
 }
