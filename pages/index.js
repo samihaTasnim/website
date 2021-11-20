@@ -42,7 +42,7 @@ export default function Home() {
           />
           <br />
           <br />
-          <small className="text-lg text-gray-500">I love everything that looks nice to the human eye. Curating websites so that users doesn't want to leave the website at all! Currently, I’m focused on building UI parts, fixing bugs and adding extra features at Flatnkeys.</small>
+          <small className="text-lg text-gray-500">I love everything that looks nice to the human eye. Curating websites so that users doesn't want to leave the website at all! Currently, I’m focused on building UI parts, fixing bugs and adding extra features at Ripple Community.</small>
           <div className="mt-4">
           <a href="https://github.com/samihaTasnim" target="_blank" className="mr-2"><Image src={githubLogo}></Image></a>
           <a href="https://www.linkedin.com/in/samiha-tasnim/" className="mr-2" target="_blank"><Image src={linkedinLogo}></Image> </a>

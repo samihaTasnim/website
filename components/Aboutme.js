@@ -57,7 +57,7 @@ const Aboutme = () => {
         </p>
         <br />
         <p className="mb-6">
-          I am working as an Intern full stack developer in Flatnkeys from August 2021. I'm in my senior year in high school and hoping to pursue a software engireering degree. Now, I still look out for opprtunities to become a better programmer by getting to know  JavaScript better and exploring new modern technologies.
+          I am working as a React developer in Ripple Community from October 2021. I'm in my senior year in high school and hoping to pursue a software engireering degree. Now, I still look out for opprtunities to become a better programmer by getting to know JavaScript better and exploring new modern technologies.
         </p>
         <GlowingButton text="Visit my github" link="https://github.com/samihaTasnim"></GlowingButton>
       </section>
@@ -68,23 +68,23 @@ const Aboutme = () => {
       <OutlinedButton text="Frameworks and Libraries" click={showFrameworkDiv} isActive={showFramework}></OutlinedButton> 
       <span className="mt-8 md:mt-0"><OutlinedButton text="Tools" click={showToolsDiv} isActive={showTools}></OutlinedButton> </span>
 
-          <div className="grid grid-cols-5 md:grid-cols-5 gap-4 mt-3">
+          <div className="flex flex-row flex-wrap justify-center content-evenly gap-4 mt-3">
            {
              showLanguage && 
               languageArray.map((x, i) => (
-                <Image src={x} key={i}></Image>
+                <Image src={x} key={i} width="60" height="100"></Image>
               ))
             }
                        {
              showFramework && 
               FrameworksArray.map((x, i) => (
-                <Image src={x} key={i}></Image>
+                <Image src={x} key={i} width="60" height="100"></Image>
               ))
             }
                        {
              showTools && 
               toolsArray.map((x, i) => (
-                <Image src={x} key={i}></Image>
+                <Image src={x} key={i} width="60" height="100"></Image>
               ))
             }
           </div>
