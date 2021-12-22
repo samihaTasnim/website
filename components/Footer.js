@@ -2,9 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="text-center pt-16">
-      <p> &copy; {new Date().getFullYear()} Samiha Tasnim</p>
-      <small>Made with Next.js and Tailwindcss</small>
+    <div className="text-center text-gray-500 pt-16">
+      <small>&copy; {new Date().getFullYear()} Samiha Tasnim | Made with Next.js and Tailwindcss</small>
     </div>
   );
 };

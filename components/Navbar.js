@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 import logo from '../public/LogoMakr-2XsKla.png'
 import Link from "next/link";
-import GlowingButton from './GlowingButton';
 
 const Navbar = () => {
 
@@ -41,16 +40,18 @@ const Navbar = () => {
 
       <div className={`lg:flex ${isOpen ? "block" : "hidden"} col-span-2 lg:place-self-end`}>
         <div className="text-base lg:flex-grow">
-          <Link href="#about-me" >
+          <Link href="/about" >
             <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer"> About me</span>
           </Link>
-          <Link href="#projects" >
+          <Link href="/projects" >
             <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer">Projects</span>
           </Link>
-          <Link href="#contact-me">
+          <Link href="/contact">
             <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer">Contact me</span>
           </Link>
-          <GlowingButton className="px-2 xl:pl-3" text='Resume' downloadResume></GlowingButton>
+          <Link href="/blog">
+            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer">Blog</span>
+          </Link>
         </div>
       </div>
     </nav>
