@@ -13,6 +13,10 @@ export default function Home() {
     <>
       <Head>
         <title>Samiha Tasnim | Full Stack Dev</title>
+        <meta name="keywords" content="website, blog, Samiha Tasnim, Samthedev, samiha-tasnim, Full-stack developer, Front-end developer, react developer" />
+        <meta name="author" content="Samiha Tasnim" />
+        <meta name="publisher" content="Samiha Tasni" />
+        <meta name="copyright" content="Samiha Tasnim" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -35,7 +39,7 @@ export default function Home() {
           <Image src={me} alt="My svg image" />
         </figure>
       </div>
-    { showAlert && <Alert message="You copied my discord user name!"></Alert>}
+      {showAlert && <Alert message="You copied my discord user name!"></Alert>}
     </>
   )
 }
