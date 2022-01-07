@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 import logo from '../public/LogoMakr-2XsKla.png'
 import Link from "next/link";
+import styles from './navbar.module.css'
 
 const Navbar = () => {
 
@@ -41,16 +42,16 @@ const Navbar = () => {
       <div className={`lg:flex ${isOpen ? "block" : "hidden"} col-span-2 lg:place-self-end`}>
         <div className="text-base lg:flex-grow">
           <Link href="/about" >
-            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer"> About me</span>
+            <span className={`${styles.hoverUnderlineAnimation} block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 transition duration-150 border-b-8 border-transparent cursor-pointer`}> About me</span>
           </Link>
           <Link href="/projects" >
-            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer">Projects</span>
+            <span className={`${styles.hoverUnderlineAnimation} block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 transition duration-150 border-b-8 border-transparent cursor-pointer`}>Projects</span>
           </Link>
           <Link href="/contact">
-            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer">Contact me</span>
+            <span className={`${styles.hoverUnderlineAnimation} block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 transition duration-150 border-b-8 border-transparent cursor-pointer`}>Contact me</span>
           </Link>
           <Link href="/blog">
-            <span className="block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 hover:-translate-y-1 cursor-pointer">Blog</span>
+            <span className={`${styles.hoverUnderlineAnimation} block mt-4 lg:inline-block lg:mt-0 px-2 xl:px-3 mr-4 transition duration-150 border-b-8 border-transparent cursor-pointer`}>Blog</span>
           </Link>
         </div>
       </div>

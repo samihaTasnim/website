@@ -11,7 +11,7 @@ import Image from 'next/image'
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <main className="bg-black text-white p-2 sm:p-12 bg-opacity-90">
+    <main className="bg-black text-white p-2 sm:p-12 bg-opacity-90 min-h-screen">
       <div className='fixed bottom-0 hidden md:block'>
         <ul className="list-none -ml-3 py-4">
           <li className='py-2'>
@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }) {
           <li>
             <a href="mailto:samxtasnim@gmail.com" className="mr-2" target="_blank"><Image src={emailLogo}></Image> </a>
           </li>
-          <li>
+          <li className='pt-2'>
             <a href="https://discords.com/bio/p/samthedev" className="mr-2" target="_blank"><Image src={discordLogo}></Image></a>
           </li>
         </ul>
