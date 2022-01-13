@@ -5,7 +5,7 @@ import githubIco from '../public/icons8-github.svg'
 import linkedinIco from '../public/icons8-linkedin.svg'
 import discordIco from '../public/icons8-discord.svg'
 import twitterLogo from '../public/twitter.svg'
-import Alert from '../components/Alert'
+import Alert from './Alert'
 
 const Contact = () => {
   const [showAlert, setShowAlert] = useState(false)

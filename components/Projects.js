@@ -7,7 +7,7 @@ import projectImg5 from '../public/project-img5.png'
 import Image from 'next/image'
 import gitIcon from '../public/icons8-github.svg';
 import linkIcon from '../public/external-link.svg';
-import OutlinedButton from '../components/OutlinedButton';
+import OutlinedButton from './OutlinedButton';
 import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
@@ -102,7 +102,7 @@ const Projects = () => {
     // }
   ]
   return (
-    <section className='mx-20 mt-16'>
+    <section className='mx-8 md:mx-20 mt-20' id="projects">
         <h3 className="text-2xl font-bold">Some Things I’ve Built </h3>
       {
         projectsArray1.map(x => (
