@@ -102,7 +102,7 @@ const Projects = () => {
     // }
   ]
   return (
-    <section className='mx-8 md:mx-20 mt-20' id="projects">
+    <section className='mx-8 md:mx-20 mt-28'>
         <h3 className="text-2xl font-bold">Some Things I’ve Built </h3>
       {
         projectsArray1.map(x => (

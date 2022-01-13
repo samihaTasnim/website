@@ -2,9 +2,9 @@ import Head from 'next/head'
 // import Image from 'next/image'
 // import me from '../public/portfolio-img.png'
 import GlowingButton from '../components/GlowingButton'
-import Aboutme from '../components/about'
-import Projects from '../components/projects'
-import Contact from '../components/contact'
+import Aboutme from '../components/About'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 
 export default function Home() {
 
@@ -32,26 +32,29 @@ export default function Home() {
 
       {/* Hero Section */}
 
-      <div className="pt-4 ml-0 md:ml-16 md:pt-8 h-full md:h-screen xxl:h-80" >
+      <div className="pt-4 ml-0 md:ml-16 md:pt-8" >
         <main className="md:mt-8 p-8">
-          <h1 className="mb-2 text-2xl lg:text-4xl xxl:text-6xl font-bold">Hello, I'm</h1>
-          <h1 className="text-xl lg:text-4xl xxl:text-6xl font-bold">Samiha Tasnim</h1>
+          <h1 className="mb-2 text-2xl lg:text-3xl xxl:text-6xl font-bold">Hello, I'm</h1>
+          <h1 className="text-xl lg:text-5xl xxl:text-6xl font-bold">Samiha Tasnim</h1>
           <br />
-          <small className="text-base text-gray-300">Front-end Developer with a little exposure to the backend | Not looking for opportunities</small>
+          <small className="text-base text-bold font-semibold text-gray-200">Front-end Developer with a little exposure to the backend | Not looking for opportunities</small>
           <br />
           <br />
-          <small className="text-lg text-gray-500">I love everything that looks nice to the human eye. Curating websites so that users doesn't want to leave the website at all! Currently, I am focused on getting started with open source contribution, blogging and graduating high school. Reach out if you have a amazing project and need my help!</small>
+          <small className="text-lg text-gray-400">I love everything that looks nice to the human eye. Curating websites so that users doesn't want to leave the website at all!
+            <br /> Currently, I am focused on getting started with open source contribution, blogging and graduating high school. Reach out if you have a amazing project and need my help!</small>
           {/* building UI parts, fixing bugs and adding extra features at Ripple Community. */}
           <br />
           <br />
-          <GlowingButton className="pt-2 xl:pl-3" text='Resume' downloadResume></GlowingButton>
+          <GlowingButton className="pt-4 xl:pl-3" text='Resume' downloadResume></GlowingButton>
         </main>
         {/* <figure className='max-w-lg'>
           <Image src={me} alt="My svg image" />
         </figure> */}
       </div>
+      <section id="about">
+        <Aboutme></Aboutme>
 
-      <Aboutme></Aboutme>
+      </section>
       <section id="projects">
         <Projects></Projects>
       </section>

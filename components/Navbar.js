@@ -31,7 +31,7 @@ const Navbar = () => {
   const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-white transition ease transform duration-300`;
 
   return (
-    <nav className={`grid grid-cols-3 gap-4 p-4 md:p-4 bg-[#191919] z-20 sticky animate ${visible ? 'top-0' : 'top-0 md:-top-20'}`}>
+    <nav className={`grid grid-cols-3 gap-4 p-4 md:p-4 bg-[#191919] z-20 sticky ${visible ? 'top-0' : 'top-0 md:-top-20'}`}>
       <div className="flex items-center flex-shrink-0 text-white mr-6 col-span-2 lg:col-span-1">
         <Image src={logo} alt="logo of my initial" width={40} height={40} /> &nbsp; &nbsp; &nbsp;
         <Link href="/">
@@ -69,7 +69,7 @@ const Navbar = () => {
           <a href="#contact" className='block mt-4 lg:inline-block lg:mt-0 mr-4 border-b-8 border-transparent cursor-pointer'>
             <span className={`${styles.hoverUnderlineAnimation} px-1 xl:px-3` }>Contact me</span>
           </a>
-          <a href="https://samihatasnim.hashnode.dev" className='block mt-4 lg:inline-block lg:mt-0 mr-4 border-b-8 border-transparent cursor-pointer'>
+          <a href="https://samihatasnim.hashnode.dev" target='_blank' className='block mt-4 lg:inline-block lg:mt-0 mr-4 border-b-8 border-transparent cursor-pointer'>
             <span className={`${styles.hoverUnderlineAnimation} px-1 xl:px-3`}>Blog</span>
           </a>
         </div>

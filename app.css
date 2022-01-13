@@ -5,7 +5,7 @@ body::-webkit-scrollbar-track {
   background: rgb(22, 22, 20);        /* color of the tracking area */
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+  background-color: rgb(150, 141, 141);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */ 
 }
 

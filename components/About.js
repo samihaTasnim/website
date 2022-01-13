@@ -49,7 +49,7 @@ const Aboutme = () => {
   const toolsArray = [vsCode, firebase, git, chrome, npm]
 
   return (
-    <div className="mx-8 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-16" id="about">
+    <div className="mx-8 md:mx-20 grid grid-cols-1 mt-2 md:mt-32 md:grid-cols-2 gap-16">
       <section>
         <h3 className="text-2xl font-bold pb-6">A little about me ·.✶</h3>
         <p>
@@ -57,7 +57,7 @@ const Aboutme = () => {
         </p>
         <br />
         <p className="mb-6">
-          I am working as a React developer in Ripple Community from October 2021. I'm in my senior year in high school and hoping to pursue a Computer Science degree. Now, I still look out for opprtunities to become a better programmer by getting to know JavaScript better and exploring new modern technologies.
+          I'm in my senior year in high school and hoping to pursue a Computer Science degree. Now, I still look out for opprtunities to become a better programmer by getting to know JavaScript better and exploring new modern technologies.
         </p>
         <p className="my-6 text-gray-400">
           P.S. Follow me on Twitter to get helpful tips to make your web developement journey easier and send me a request on discord to get rid of stubborn bugs. I'm always happy to help!
