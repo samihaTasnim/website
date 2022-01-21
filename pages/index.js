@@ -26,7 +26,7 @@ export default function Home() {
         <meta property="twitter:title" content="Samiha Tasnim" />
         <meta property="twitter:description" content="Hello, I'm Samiha Tasnim, a Full stack developer. Visit the website to know about my experiences, projects, tech stack and socials. " />
         <meta property="twitter:image" content="https://i.ibb.co/sH0DVwQ/favicon.png" />
-
+        <meta name="google-site-verification" content="iQ3SunMUi3Qfa1kJ2H9N65yolH4TmXDZnt7xY9Q3KKw" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
