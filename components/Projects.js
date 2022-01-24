@@ -23,6 +23,7 @@ const Projects = () => {
     {
       id: 1,
       name: 'PhotoScape',
+      alt: 'PhotoScape webapp image preview',
       description: 'Developed in 3 days with a strong UI where users choose a package and book a photographer with just 1 click, write reviews and show bookings history, with enhanced UX. Admins can add, update, maintain, track and delete services to have more control of the website that reduces manual website management.',
       img: projectImg1,
       techStack: 'React, Bootstrap, Firebase(auth), Node.js and MongoDB',
@@ -32,6 +33,7 @@ const Projects = () => {
     {
       id: 2,
       name: 'Ema-john',
+      alt: 'Ema-john webapp image preview',
       description: 'A simplistic amazon clone with art manipulation and item descriptions on the homepage ensuring product value and client satisfaction. Stripe test payment integration which ensures a full e-commerce feature. Data updates with 80 items from database to get new and top products to the user.',
       img: projectImg2,
       techStack: 'React, Bootstrap, Firebase(auth), Node.js and MongoDB',
@@ -41,6 +43,7 @@ const Projects = () => {
     {
       id: 3,
       name: 'Penguin Fashion',
+      alt: 'Penguin Fashion image preview',
       description: 'A simple landing page (E-commerce) website which is mobile responsive. Attractive UI and pixel perfect design.',
       img: projectImg3,
       techStack: 'HTML, CSS, Javascript and Bootstrap',
@@ -53,6 +56,7 @@ const Projects = () => {
     {
       id: 4,
       name: 'Travel Buddy',
+      alt: 'Travel Buddy image preview',
       description: 'A ride sharing website where user can easily sign up and book a ride.Contains dummy map selection and clean user interface',
       img: projectImg4,
       techStack: 'React, Bootstrap, Firebase auth and Google maps',
@@ -62,6 +66,7 @@ const Projects = () => {
     {
       id: 5,
       name: 'Pin matcher',
+      alt: 'Pin mathcer image preview',
       description: 'A website where you can generate a pin and validate that pin to unlock a secret door.',
       img: projectImg5,
       techStack: 'HTML, CSS and JavaScript',
@@ -108,7 +113,7 @@ const Projects = () => {
         projectsArray1.map(x => (
           <Fade bottom key={x.id}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
-              <Image className="object-cover rounded-lg h-full opacity-50 hover:opacity-100 " src={x.img}></Image>
+              <Image className="object-cover rounded-lg h-full opacity-50 hover:opacity-100 " src={x.img}  alt={x.alt}></Image>
             <div className=" md:px-0">
             <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
                   {x.name}
@@ -122,8 +127,8 @@ const Projects = () => {
                 </p>
               </div>
               <div className="mt-4 text-center md:text-right">
-              <a href={x.gitLink} target="_blank"><Image src={gitIcon}></Image> </a> 
-              <a href={x.liveLink} target="_blank"><Image src={linkIcon}></Image></a>
+              <a href={x.gitLink} target="_blank"><Image src={gitIcon} alt="Visit this reopsitory in github"></Image> </a> 
+              <a href={x.liveLink} target="_blank"><Image src={linkIcon} alt="Visit it live"></Image></a>
               </div>
             </div>
           </div>
@@ -134,7 +139,7 @@ const Projects = () => {
         projectsArray2.map(x => (
           <Fade bottom key={x.id}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
-              <Image className="object-cover h-full rounded-lg opacity-50 hover:opacity-100 " src={x.img}></Image>
+              <Image className="object-cover h-full rounded-lg opacity-50 hover:opacity-100 " src={x.img} alt={alt}></Image>
             <div className=" md:px-0">
             <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
                   {x.name}
@@ -148,8 +153,8 @@ const Projects = () => {
                 </p>
               </div>
               <div className="mt-4 text-center md:text-right">
-              <a href={x.gitLink} target="_blank"><Image src={gitIcon}></Image> </a> 
-              <a href={x.liveLink} target="_blank"><Image src={linkIcon}></Image></a>
+              <a href={x.gitLink} target="_blank"><Image src={gitIcon} alt="Visit this reopsitory in github"></Image> </a> 
+              <a href={x.liveLink} target="_blank"><Image src={linkIcon} alt="Visit it live"></Image></a>
               </div>
             </div>
           </div>

@@ -44,9 +44,76 @@ const Aboutme = () => {
 
 
 
-  const languageArray = [javascript, typescript, html, css]
-  const FrameworksArray = [react, nextjs, redux, bootstrap, tailwind, node, mongodb]
-  const toolsArray = [vsCode, firebase, git, chrome, npm]
+  const languageArray = [
+    {
+      path:javascript,
+      name: "JavaScript"
+    },
+    {
+      path:typescript,
+      name: "TypeScript"
+    },
+    {
+      path:html,
+      name: "HTML"
+    },
+    {
+      path:css,
+      name: "CSS"
+    }
+  ]
+  const FrameworksArray = [
+    {
+      path:react,
+      name: "React"
+    },
+    {
+      path:nextjs,
+      name: "Next.js"
+    },
+    {
+      path:redux,
+      name: "Redux"
+    },
+    {
+      path:bootstrap,
+      name: "Bootstrap"
+    },
+    {
+      path:tailwind,
+      name: "TailwindCSS"
+    },
+    {
+      path:node,
+      name: "Nodejs"
+    },
+    {
+      path:mongodb,
+      name: "MongoDB"
+    }
+  ]
+  const toolsArray = [
+    {
+      path:vsCode,
+      name: "VS code"
+    },
+    {
+      path:firebase,
+      name: "Firebase"
+    },
+    {
+      path:git,
+      name: "Git"
+    },
+    {
+      path:chrome,
+      name: "Chrome"
+    },
+    {
+      path: npm,
+      name: "NPM"
+    }
+  ]
 
   return (
     <div className="mx-8 md:mx-20 grid grid-cols-1 mt-2 md:mt-32 md:grid-cols-2 gap-16">
@@ -75,19 +142,19 @@ const Aboutme = () => {
            {
              showLanguage && 
               languageArray.map((x, i) => (
-                <Image src={x} key={i} width="60" height="100"></Image>
+                <Image src={x.path} key={i} width="60" height="100" alt={x.name}></Image>
               ))
             }
                        {
              showFramework && 
               FrameworksArray.map((x, i) => (
-                <Image src={x} key={i} width="60" height="100"></Image>
+                <Image src={x.path} key={i} width="60" height="100" alt={x.name}></Image>
               ))
             }
                        {
              showTools && 
               toolsArray.map((x, i) => (
-                <Image src={x} key={i} width="60" height="100"></Image>
+                <Image src={x.path} key={i} width="60" height="100" alt={x.name}></Image>
               ))
             }
           </div>
