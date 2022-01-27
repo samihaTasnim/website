@@ -16,7 +16,6 @@ export default function Home() {
         <meta name="description" content="Hello, I'm Samiha Tasnim, a Full stack web developer. Visit the website to know about my experiences, projects, tech stack and socials." />
         <meta name="copyright" content="Samiha Tasnim" />
         <meta name="robots" content="index, follow"></meta>
-        <link href="https://samiha-tasnim.vercel.app" rel="canonical"></link>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://samiha-tasnim.is-a.dev" />
         <meta property="og:title" content="Samiha Tasnim" />
@@ -40,11 +39,11 @@ export default function Home() {
           <p className="mb-2 text-2xl lg:text-3xl xxl:text-6xl font-bold">Hello, I'm</p>
           <h1 className="text-2xl lg:text-5xl xxl:text-6xl font-bold">Samiha Tasnim</h1>
           <br />
-          <small className="text-xl text-bold font-semibold text-gray-300">Front-end Developer with a little exposure to the backend | Not looking for opportunities</small>
+          <small className="text-xl text-bold font-semibold text-gray-300">Front-end Developer with a little exposure to the backend</small>
           <br />
           <br />
           <small className="text-lg text-gray-400">I love everything that looks nice to the human eye. Curating websites so that users doesn't want to leave the website at all!
-            <br /> Currently, I am focused on getting started with open source contribution, blogging and graduating high school. Reach out if you have a amazing project and need my help!</small>
+            <br /> Currently, I am focused on getting started with open source contribution, blogging and graduating high school. Reach out if you have a amazing project or need my help!</small>
           {/* building UI parts, fixing bugs and adding extra features at Ripple Community. */}
           <br />
           <br />

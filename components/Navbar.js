@@ -22,12 +22,10 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
 
-  console.log(visible)
-
   const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-white transition ease transform duration-300`;
 
   return (
-    <nav className={`grid grid-cols-3 gap-0 p-4 md:px-12 md:py-6  bg-[#191919] z-20 fixed w-full ${visible ? 'top-0' : '-top-80'}`}>
+    <nav className={`grid grid-cols-3 gap-0 px-4 py-4 md:px-16 md:py-6  bg-[#191919] z-20 fixed w-full ${visible ? 'top-0' : '-top-80'}`}>
       <div className="flex items-center flex-shrink-0 text-white mr-6 col-span-2 lg:col-span-1">
         <Image src={logo} alt="logo of my initial" width={40} height={40} /> &nbsp; &nbsp; &nbsp;
         <Link href="/">
@@ -35,7 +33,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <button
+      <button ria-label="Open or collapse navbar"
         className="flex flex-col h-12 w-12 rounded place-self-end items-center group lg:hidden"
         onClick={() => setIsOpen(!isOpen) }
       >

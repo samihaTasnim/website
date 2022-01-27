@@ -48,10 +48,10 @@ const Contact = () => {
                 </p>
                 <div className="flex align-middle mt-6 md:hidden">
                   <span> Or, find me on &nbsp;</span>
-                  <a href="https://github.com/samihaTasnim" target="_blank" className="mr-2 "><Image src={githubIco}></Image></a>
-                  <a href="https://www.linkedin.com/in/samiha-tasnim/" className="mr-2" target="_blank"><Image src={linkedinIco}></Image> </a>
-                  <a href="https://twitter.com/SamihaTasnimm" className="mr-2" target="_blank"><Image src={twitterLogo}></Image> </a>
-                  <span className="cursor-pointer" onClick={copydiscordUsername}><Image src={discordIco}></Image></span>
+                  <a href="https://github.com/samihaTasnim" target="_blank" className="mr-2 "><Image src={githubIco} alt="Visit my github"></Image></a>
+                  <a href="https://www.linkedin.com/in/samiha-tasnim/" className="mr-2" target="_blank"><Image src={linkedinIco} alt="Visit my LinkedIn"></Image> </a>
+                  <a href="https://twitter.com/SamihaTasnimm" className="mr-2" target="_blank"><Image src={twitterLogo} alt="Visit my Twitter"></Image> </a>
+                  <span className="cursor-pointer" onClick={copydiscordUsername}><Image src={discordIco} alt="Copy my discord user name"></Image></span>
                 </div>
                 <br />
                 Hate forms? Send me an <a href="mailto:samxtasnim@gmail.com" className="underline">email</a> instead.
@@ -62,18 +62,18 @@ const Contact = () => {
           </div>
           <form onSubmit={sendEmail}>
             <div>
-              <span className="uppercase text-sm text-white font-bold">Your Name</span>
-              <input name="sender_name" className="w-full bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              <label className="uppercase text-sm text-white font-bold" for="name">Your Name</label>
+              <input name="sender_name" id="name" className="w-full bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text" placeholder="" />
             </div>
             <div className="mt-8">
-              <span className="uppercase text-sm text-white font-bold">Email</span> <span className="text-sm text-gray-200">(if you're expecting a reply from me)</span>
-              <input type="email" name="email" className="w-full bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              <label for="email" className="uppercase text-sm text-white font-bold">Email</label> <span className="text-sm text-gray-200">(if you're expecting a reply from me)</span>
+              <input type="email" id="email" name="email" className="w-full bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text" />
             </div>
             <div className="mt-8">
-              <span className="uppercase text-sm text-white font-bold">Message</span>
-              <textarea name="message"
+              <label className="uppercase text-sm text-white font-bold" for="text">Message</label>
+              <textarea name="message" id="text"
                 className="w-full h-32 bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
             </div>
             <div className="mt-8">

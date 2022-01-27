@@ -46,67 +46,67 @@ const Aboutme = () => {
 
   const languageArray = [
     {
-      path:javascript,
+      path: javascript,
       name: "JavaScript"
     },
     {
-      path:typescript,
+      path: typescript,
       name: "TypeScript"
     },
     {
-      path:html,
+      path: html,
       name: "HTML"
     },
     {
-      path:css,
+      path: css,
       name: "CSS"
     }
   ]
   const FrameworksArray = [
     {
-      path:react,
+      path: react,
       name: "React"
     },
     {
-      path:nextjs,
+      path: nextjs,
       name: "Next.js"
     },
     {
-      path:redux,
+      path: redux,
       name: "Redux"
     },
     {
-      path:bootstrap,
+      path: bootstrap,
       name: "Bootstrap"
     },
     {
-      path:tailwind,
+      path: tailwind,
       name: "TailwindCSS"
     },
     {
-      path:node,
+      path: node,
       name: "Nodejs"
     },
     {
-      path:mongodb,
+      path: mongodb,
       name: "MongoDB"
     }
   ]
   const toolsArray = [
     {
-      path:vsCode,
+      path: vsCode,
       name: "VS code"
     },
     {
-      path:firebase,
+      path: firebase,
       name: "Firebase"
     },
     {
-      path:git,
+      path: git,
       name: "Git"
     },
     {
-      path:chrome,
+      path: chrome,
       name: "Chrome"
     },
     {
@@ -118,7 +118,7 @@ const Aboutme = () => {
   return (
     <div className="mx-8 md:mx-20 grid grid-cols-1 mt-2 md:mt-32 md:grid-cols-2 gap-16">
       <section>
-        <h3 className="text-2xl font-bold pb-6">A little about me ·.✶</h3>
+        <p className="text-2xl font-bold pb-6">A little about me ·.✶</p>
         <p>
           I liked the idea of coding from when I was 14. How people would sit in front of computers and write some god forsaked language and they resulted in actually good looking interfaces really amazed me. Started out with python but gradually shifted to web dev using HTML, CSS and JavaScript.
         </p>
@@ -132,32 +132,41 @@ const Aboutme = () => {
         <GlowingButton text="Visit my github" link="https://github.com/samihaTasnim"></GlowingButton>
       </section>
       <section>
-      <h3 className="text-2xl font-bold pt-16 pb-6">What do I bring to the table</h3>
+        <h3 className="text-2xl font-bold pt-16 pb-6">What do I bring to the table</h3>
 
-      <OutlinedButton text="Languages" click={showLanguageDiv} isActive={showLanguage}> </OutlinedButton> 
-      <OutlinedButton text="Frameworks and Libraries" click={showFrameworkDiv} isActive={showFramework}></OutlinedButton> 
-      <span className="mt-8 md:mt-0"><OutlinedButton text="Tools" click={showToolsDiv} isActive={showTools}></OutlinedButton> </span>
+        <OutlinedButton text="Languages" click={showLanguageDiv} isActive={showLanguage}> </OutlinedButton>
+        <OutlinedButton text="Frameworks and Libraries" click={showFrameworkDiv} isActive={showFramework}></OutlinedButton>
+        <span className="mt-8 md:mt-0"><OutlinedButton text="Tools" click={showToolsDiv} isActive={showTools}></OutlinedButton> </span>
 
-          <div className="flex flex-row flex-wrap justify-center content-evenly gap-4 mt-3">
-           {
-             showLanguage && 
-              languageArray.map((x, i) => (
+        <div className="flex flex-row flex-wrap justify-center place-content-around gap-4 mt-3">
+          {
+            showLanguage &&
+            languageArray.map((x, i) => (
+              <figure className="text-center px-2">
                 <Image src={x.path} key={i} width="60" height="100" alt={x.name}></Image>
-              ))
-            }
-                       {
-             showFramework && 
-              FrameworksArray.map((x, i) => (
+                <caption className="text-gray-300">{x.name}</caption>
+              </figure>
+            ))
+          }
+          {
+            showFramework &&
+            FrameworksArray.map((x, i) => (
+              <figure className="px-2">
                 <Image src={x.path} key={i} width="60" height="100" alt={x.name}></Image>
-              ))
-            }
-                       {
-             showTools && 
-              toolsArray.map((x, i) => (
+                <caption className="text-gray-300">{x.name}</caption>
+              </figure>
+            ))
+          }
+          {
+            showTools &&
+            toolsArray.map((x, i) => (
+              <figure className="text-center px-2">
                 <Image src={x.path} key={i} width="60" height="100" alt={x.name}></Image>
-              ))
-            }
-          </div>
+                <caption className="text-gray-300">{x.name}</caption>
+              </figure>
+            ))
+          }
+        </div>
       </section>
     </div>
   );
