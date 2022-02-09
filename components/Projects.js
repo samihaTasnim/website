@@ -139,7 +139,7 @@ const Projects = () => {
         projectsArray2.map(x => (
           <Fade bottom key={x.id}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
-              <Image className="object-cover h-full rounded-lg opacity-50 hover:opacity-100 " src={x.img} alt={alt}></Image>
+              <Image className="object-cover h-full rounded-lg opacity-50 hover:opacity-100 " src={x.img} alt={x.alt}></Image>
             <div className=" md:px-0">
             <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
                   {x.name}

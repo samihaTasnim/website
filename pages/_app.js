@@ -16,7 +16,7 @@ export default function MyApp({ Component, pageProps }) {
   const [showAlert, setShowAlert] = useState(false)
 
   const copydiscordUsername = () => {
-    navigator.clipboard.writeText("samm#6276")
+    navigator.clipboard.writeText("sam.#5913")
     setShowAlert(true)
     setTimeout(function () {
       setShowAlert(false)

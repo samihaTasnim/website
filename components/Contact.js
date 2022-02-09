@@ -12,7 +12,7 @@ const Contact = () => {
   const [showSentConfirmation, setShowSentConfirmation] = useState(false)
 
   const copydiscordUsername = () => {
-    navigator.clipboard.writeText("samm#6276")
+    navigator.clipboard.writeText("sam.#5913")
     setShowSentConfirmation(false)
     setShowAlert(true)
     setTimeout(function () {
