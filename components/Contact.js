@@ -12,7 +12,7 @@ const Contact = () => {
   const [showSentConfirmation, setShowSentConfirmation] = useState(false)
 
   const copydiscordUsername = () => {
-    navigator.clipboard.writeText("sam.#5913")
+    navigator.clipboard.writeText("sam.#7750")
     setShowSentConfirmation(false)
     setShowAlert(true)
     setTimeout(function () {
@@ -44,7 +44,7 @@ const Contact = () => {
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
               <div className="text-gray-300 mt-8">
                 <p>
-                  As of now, <span className="font-bold">I'm looking for new job opportunities with React/Node.js tech stack for part-time/freelance opportunities</span>, but my inbox is always open if you want to just say hi. Hit me up if you have some question, want a collaboration or just want to get to know me. I'll try to get back to you as soon as I can.
+                  As of now, <span className="font-bold">I'm looking for new job opportunity with React/Node.js tech stack for part-time/freelance opportunities</span>, but my inbox is always open if you want to just say hi. Hit me up if you have some question, want a collaboration or just want to get to know me. I'll try to get back to you as soon as I can.
                 </p>
                 <div className="flex align-middle mt-6 md:hidden">
                   <span> Or, find me on &nbsp;</span>
