@@ -118,7 +118,7 @@ const Aboutme = () => {
   return (
     <div className="mx-8 md:mx-20 grid grid-cols-1 mt-2 md:mt-32 md:grid-cols-2 gap-16">
       <section>
-        <p className="text-2xl font-bold pb-6">A little about me</p>
+        <p className="text-2xl font-bold pb-6">About me</p>
         <p>
           I liked the idea of coding from when I was 14. How people would sit in front of computers and write some god forsaked language and they resulted in actually good looking interfaces really amazed me. Started out with python but gradually shifted to web dev using HTML, CSS and JavaScript.
         </p>
