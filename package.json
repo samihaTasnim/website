@@ -1,6 +1,8 @@
 {
   "private": true,
   "name": "website",
+  "version": "1.0.0",
+  "description": "Portfolio website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
