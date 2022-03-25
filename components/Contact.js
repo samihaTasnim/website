@@ -61,17 +61,16 @@ const Contact = () => {
           </div>
           <form onSubmit={sendEmail}>
             <div>
-              <label className="uppercase text-sm text-white font-bold" for="name">Your Name</label>
+              <label className="uppercase text-sm text-white font-bold" htmlFor="name">Your Name</label>
               <input name="sender_name" id="name" className="w-full bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text" placeholder="" />
             </div>
             <div className="mt-8">
-              <label for="email" className="uppercase text-sm text-white font-bold">Email</label> <span className="text-sm text-gray-200">(if you're expecting a reply from me)</span>
-              <input type="email" id="email" name="email" className="w-full bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text" />
+              <label htmlFor="email" className="uppercase text-sm text-white font-bold">Email</label> <span className="text-sm text-gray-200">(if you're expecting a reply from me)</span>
+              <input type="email" id="email" name="email" className="w-full bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"/>
             </div>
             <div className="mt-8">
-              <label className="uppercase text-sm text-white font-bold" for="text">Message</label>
+              <label className="uppercase text-sm text-white font-bold" htmlFor="text">Message</label>
               <textarea name="message" id="text"
                 className="w-full h-32 bg-gray-500 bg-opacity-30 text-white mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
             </div>

@@ -11,7 +11,7 @@ import OutlinedButton from './OutlinedButton';
 import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
- 
+
   const [showExtraProjects, setShowExtraProjects] = useState(false)
 
   const toggleMoreProjects = () => {
@@ -72,97 +72,65 @@ const Projects = () => {
       techStack: 'HTML, CSS and JavaScript',
       gitLink: 'https://github.com/samihaTasnim/pin-matcher',
       liveLink: 'https://samihatasnim.github.io/pin-matcher/'
-    },
-    // {
-    //   name: '',
-    //   description: '',
-    //   img: '',
-    //   techStack: '',
-    //   gitLink: '',
-    //   liveLink: ''
-    // },
-    // {
-    //   name: '',
-    //   description: '',
-    //   img: '',
-    //   techStack: '',
-    //   gitLink: '',
-    //   liveLink: ''
-    // },
-    // {
-    //   name: '',
-    //   description: '',
-    //   img: '',
-    //   techStack: '',
-    //   gitLink: '',
-    //   liveLink: ''
-    // },
-    // {
-    //   name: '',
-    //   description: '',
-    //   img: '',
-    //   techStack: '',
-    //   gitLink: '',
-    //   liveLink: ''
-    // }
+    }
   ]
   return (
     <section className='mx-8 md:mx-20 mt-28'>
-        <h3 className="text-2xl font-bold">Some Things I’ve Built </h3>
+      <h3 className="text-2xl font-bold">Some Things I’ve Built </h3>
       {
         projectsArray1.map(x => (
           <Fade bottom key={x.id}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
-              <Image className="object-cover rounded-lg h-full opacity-50 hover:opacity-100 " src={x.img}  alt={x.alt}></Image>
-            <div className=" md:px-0">
-            <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
+              <Image className="object-cover rounded-lg h-full opacity-50 hover:opacity-100 " src={x.img} alt={x.alt}></Image>
+              <div className=" md:px-0">
+                <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
                   {x.name}
                 </p>
-              <div className="p-4 md:p-8 mt-0 md:-ml-14 shadow-xl z-10 bg-gray-500 bg-opacity-30 rounded-md">
-                <p className="mb-2 text-center md:text-right text-sm text-grey-600">
-                  {x.description}
-                </p>
-                <p className="text-center md:text-right text-sm text-gray-400">
-                  {x.techStack}
-                </p>
-              </div>
-              <div className="mt-4 text-center md:text-right">
-              <a href={x.gitLink} target="_blank"><Image src={gitIcon} alt="Visit this reopsitory in github"></Image> </a> 
-              <a href={x.liveLink} target="_blank"><Image src={linkIcon} alt="Visit it live"></Image></a>
+                <div className="p-4 md:p-8 mt-0 md:-ml-14 shadow-xl z-10 bg-gray-500 bg-opacity-30 rounded-md">
+                  <p className="mb-2 text-center md:text-right text-sm text-grey-600">
+                    {x.description}
+                  </p>
+                  <p className="text-center md:text-right text-sm text-gray-400">
+                    {x.techStack}
+                  </p>
+                </div>
+                <div className="mt-4 text-center md:text-right">
+                  <a href={x.gitLink} target="_blank"><Image src={gitIcon} alt="Visit this reopsitory in github"></Image> </a>
+                  <a href={x.liveLink} target="_blank"><Image src={linkIcon} alt="Visit it live"></Image></a>
+                </div>
               </div>
             </div>
-          </div>
           </Fade>
         ))
       }
-      { showExtraProjects && 
+      {showExtraProjects &&
         projectsArray2.map(x => (
           <Fade bottom key={x.id}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:items-center">
               <Image className="object-cover h-full rounded-lg opacity-50 hover:opacity-100 " src={x.img} alt={x.alt}></Image>
-            <div className=" md:px-0">
-            <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
+              <div className=" md:px-0">
+                <p className="mb-4 text-lg text-center md:text-right leading-none font-bold">
                   {x.name}
                 </p>
-              <div className="p-4 md:p-8 mt-0 md:-ml-14 shadow-xl z-10 bg-gray-500 bg-opacity-30 rounded-lg">
-                <p className="mb-2 text-center md:text-right text-sm text-grey-600">
-                  {x.description}
-                </p>
-                <p className="text-center md:text-right text-sm text-gray-400">
-                  {x.techStack}
-                </p>
-              </div>
-              <div className="mt-4 text-center md:text-right">
-              <a href={x.gitLink} target="_blank"><Image src={gitIcon} alt="Visit this reopsitory in github"></Image> </a> 
-              <a href={x.liveLink} target="_blank"><Image src={linkIcon} alt="Visit it live"></Image></a>
+                <div className="p-4 md:p-8 mt-0 md:-ml-14 shadow-xl z-10 bg-gray-500 bg-opacity-30 rounded-lg">
+                  <p className="mb-2 text-center md:text-right text-sm text-grey-600">
+                    {x.description}
+                  </p>
+                  <p className="text-center md:text-right text-sm text-gray-400">
+                    {x.techStack}
+                  </p>
+                </div>
+                <div className="mt-4 text-center md:text-right">
+                  <a href={x.gitLink} target="_blank"><Image src={gitIcon} alt="Visit this reopsitory in github"></Image> </a>
+                  <a href={x.liveLink} target="_blank"><Image src={linkIcon} alt="Visit it live"></Image></a>
+                </div>
               </div>
             </div>
-          </div>
           </Fade>
         ))
       }
       <div className="mt-8 text-center">
-      <OutlinedButton text={showExtraProjects ? 'Show less' : 'Load more'} click={toggleMoreProjects}></OutlinedButton>
+        <OutlinedButton text={showExtraProjects ? 'Show less' : 'Load more'} click={toggleMoreProjects}></OutlinedButton>
       </div>
     </section>
   );
