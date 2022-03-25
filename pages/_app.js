@@ -40,7 +40,7 @@ export default function MyApp({ Component, pageProps }) {
             <a href="https://twitter.com/SamihaTasnimm" className="mr-2" target="_blank"><Image src={twitterLogo}></Image> </a>
           </li>
           <li>
-            <a href="mailto:samxtasnim@gmail.com" className="mr-2" target="_blank"><Image src={emailLogo}></Image> </a>
+            <a href="mailto:samihatasnim@protonmail.com" className="mr-2" target="_blank"><Image src={emailLogo}></Image> </a>
           </li>
           <li>
             <span onClick={copydiscordUsername} className="mr-2 hover:cursor-pointer"><Image src={discordLogo}></Image></span>
