@@ -17,12 +17,12 @@ export default function Home() {
         <meta name="copyright" content="Samiha Tasnim" />
         <meta name="robots" content="index, follow"></meta>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://samiha-tasnim.is-a.dev" />
+        <meta property="og:url" content="https://samihatasnim.is-a.dev" />
         <meta property="og:title" content="Samiha Tasnim" />
         <meta property="og:description" content="Hello, I'm Samiha Tasnim, a Full stack developer. Visit the website to know about my experiences, projects, tech stack and socials. " />
         <meta property="og:image" content="https://i.ibb.co/sH0DVwQ/favicon.png" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://samiha-tasnim.is-a.dev" />
+        <meta property="twitter:url" content="https://samihatasnim.is-a.dev" />
         <meta property="twitter:title" content="Samiha Tasnim" />
         <meta property="twitter:description" content="Hello, I'm Samiha Tasnim, a Full stack developer. Visit the website to know about my experiences, projects, tech stack and socials. " />
         <meta property="twitter:image" content="https://i.ibb.co/sH0DVwQ/favicon.png" />
@@ -39,12 +39,10 @@ export default function Home() {
           <p className="mb-2 text-2xl lg:text-3xl xxl:text-6xl font-bold">Hello, I'm</p>
           <h1 className="text-2xl lg:text-5xl xxl:text-6xl font-bold">Samiha Tasnim</h1>
           <br />
-          <small className="text-xl text-bold font-semibold text-gray-300">Front-end Developer with a little exposure to the backend</small>
           <br />
-          <br />
-          <small className="text-lg text-gray-400">I love everything that looks nice to the human eye. Curating websites so that users doesn't want to leave the website at all!
-            <br /> Currently, I am focused on getting started with open source contribution, blogging and graduating high school. Reach out if you have a amazing project or need my help!</small>
+          <small className="text-lg text-gray-400">I'm a Full stack web developer, sucker for good UI's and a tech geek. Curating websites that users don't want to leave at all! Currently, I am focused on getting started with open source contribution, blogging and graduating high school. Reach out if you have an amazing project or need my help!</small>
           {/* building UI parts, fixing bugs and adding extra features at Ripple Community. */}
+          <br />
           <br />
           <br />
           <GlowingButton className="pt-4 xl:pl-3" text='Resume' downloadResume></GlowingButton>

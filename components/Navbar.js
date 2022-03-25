@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image'
-import logo from '../public/LogoMakr-2XsKla.png'
 import Link from "next/link";
 import styles from './navbar.module.css'
 import { debounce } from './utils/debounce';
@@ -25,11 +23,10 @@ const Navbar = () => {
   const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-white transition ease transform duration-300`;
 
   return (
-    <nav className={`grid grid-cols-3 gap-0 px-4 py-4 md:px-16 md:py-6  bg-[#191919] z-20 fixed w-full ${visible ? 'top-0' : '-top-80'}`}>
-      <div className="flex items-center flex-shrink-0 text-white mr-6 col-span-2 lg:col-span-1">
-        <Image src={logo} alt="logo of my initial" width={40} height={40} /> &nbsp; &nbsp; &nbsp;
+    <nav className={`grid grid-cols-3 gap-0 px-10 py-4 md:px-24 md:pb-6 md:pt-8 bg-[#191919] z-20 fixed w-full ${visible ? 'top-0' : '-top-80'}`}>
+      <div className="text-white col-span-2 lg:col-span-1">
         <Link href="/">
-          <span className="font-semibold text-xl tracking-tight cursor-pointer">Samiha Tasnim</span>
+          <span className="font-semibold text-xl cursor-pointer">Samiha Tasnim</span>
         </Link>
       </div>
 

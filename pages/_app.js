@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps }) {
   }
 
   return (
-    <main className="bg-black text-white px-4 md:px-12 pt-4 bg-opacity-90">
+    <main className="bg-black text-white px-2 md:px-12 pt-4 bg-opacity-90">
       <Navbar />
       <Component {...pageProps} />
       <Footer />
