@@ -1,17 +1,11 @@
 import Head from 'next/head'
-// import Image from 'next/image'
-// import me from '../public/portfolio-img.png'
-import GlowingButton from '../components/GlowingButton'
-import Aboutme from '../components/About'
-import Projects from '../components/Projects'
-import Contact from '../components/Contact'
 
 export default function Home() {
 
   return (
     <>
       <Head>
-        <title>Samiha Tasnim</title>
+        <title>sam's space</title>
         <meta name="keywords" content="samiha tasnim website, blog, Samiha Tasnim, samthedev, samiha-tasnim, Full-stack developer, Front-end developer, react developer" />
         <meta name="description" content="Hello, I'm Samiha Tasnim, a Full stack web developer. Visit the website to know about my experiences, projects, tech stack and socials." />
         <meta name="copyright" content="Samiha Tasnim" />
@@ -20,48 +14,28 @@ export default function Home() {
         <meta property="og:url" content="https://samihatasnim.is-a.dev" />
         <meta property="og:title" content="Samiha Tasnim" />
         <meta property="og:description" content="Hello, I'm Samiha Tasnim, a Full stack developer. Visit the website to know about my experiences, projects, tech stack and socials. " />
-        <meta property="og:image" content="https://i.ibb.co/sH0DVwQ/favicon.png" />
+        {/* <meta property="og:image" content="https://i.ibb.co/sH0DVwQ/favicon.png" /> */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://samihatasnim.is-a.dev" />
         <meta property="twitter:title" content="Samiha Tasnim" />
         <meta property="twitter:description" content="Hello, I'm Samiha Tasnim, a Full stack developer. Visit the website to know about my experiences, projects, tech stack and socials. " />
-        <meta property="twitter:image" content="https://i.ibb.co/sH0DVwQ/favicon.png" />
+        {/* <meta property="twitter:image" content="https://i.ibb.co/sH0DVwQ/favicon.png" /> */}
         {/* google search console meta tag */}
         <meta name="google-site-verification" content="iQ3SunMUi3Qfa1kJ2H9N65yolH4TmXDZnt7xY9Q3KKw" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍩</text></svg>"></link>
 
-        <link rel="icon" href="/favicon.png" />
       </Head>
 
       {/* Hero Section */}
 
-      <div className="pt-16 mb-12 md:mb-0 ml-0 md:ml-16 md:pt-24" >
-        <main className="md:mt-8 p-8">
-          <p className="mb-2 text-2xl lg:text-3xl xxl:text-6xl font-bold">Hello, I'm</p>
-          <h1 className="text-2xl lg:text-5xl xxl:text-6xl font-bold">Samiha Tasnim</h1>
+        <div className="text-lg text-gray-200">
+          <p>I'm a Full stack web developer, sucker for knowledge and a ISFJ-T. I interned at two companies and unfortunately none of them ended well. I also worked full time building UI parts, fixing bugs and adding extra features at Ripple Community, I had to quit because I wanted fo focus on studying. </p>
           <br />
+          <p>Currently, I am getting into open source contribution, blogging and studying full time. I still appear occasionaly on discord servers and help people out. I keep a <a href="/resources">collection of resources</a> I found over the time.</p>
           <br />
-          <small className="text-lg text-gray-400">I'm a Full stack web developer, sucker for good UI's and a tech geek. Curating websites that users don't want to leave at all! Currently, I am focused on getting started with open source contribution, blogging and graduating high school. Reach out if you have an amazing project or need my help!</small>
-          {/* building UI parts, fixing bugs and adding extra features at Ripple Community. */}
+          <p>During my free time, I enjoy reading and watching movies. I mainly read mangas and novels but sometimes I read other people's writings too. You can see my collections of favourite quotes from movies and books <a href="/quotes">here</a>.</p>
           <br />
-          <br />
-          <br />
-          <GlowingButton className="pt-4 xl:pl-3" text='Resume' downloadResume></GlowingButton>
-        </main>
-        {/* <figure className='max-w-lg'>
-          <Image src={me} alt="My svg image" />
-        </figure> */}
-      </div>
-      <section id="about">
-        <Aboutme></Aboutme>
-
-      </section>
-      <section id="projects">
-        <Projects></Projects>
-      </section>
-
-      <section id="contact">
-        <Contact></Contact>
-      </section>
+        </div>
 
     </>
   )
