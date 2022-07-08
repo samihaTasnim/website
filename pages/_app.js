@@ -12,10 +12,11 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>sam's space</title>
-        <meta name="keywords" content="samiha tasnim website, blog, Samiha Tasnim, samthedev, samiha-tasnim, Full-stack developer, Front-end developer, react developer" />
-        <meta name="description" content="Hello, I'm Samiha Tasnim, a Full stack web developer. Visit the website to know about my experiences, projects, tech stack and socials." />
+        <meta name="keywords" content="samiha tasnim website, blog, Samiha Tasnim, samthedev, samiha-tasnim, Full-stack developer, Front-end developer, react developer, samiha tasnim, sam's blog, sam's space" />
+        <meta name="description" content="Hello, I'm Samiha Tasnim, a Full stack web developer. Visit the website to know about my experiences, projects, or to read my blog." />
         <meta name="copyright" content="Samiha Tasnim" />
         <meta name="robots" content="index, follow"></meta>
+        <html lang="en"></html>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://samihatasnim.is-a.dev" />
         <meta property="og:title" content="Samiha Tasnim" />
