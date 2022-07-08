@@ -9,7 +9,7 @@ export default function Home({ posts }) {
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className='flex flex-col py-2 border-2 border-transparent border-b-gray-600'
+          className='flex flex-col cursor-pointer py-2 border-2 border-transparent border-b-gray-600 hover:text-black hover:bg-white hover:px-4'
         >
           <Link href={`/blog/${slug}`}>
             <div className='flex'>
@@ -17,7 +17,7 @@ export default function Home({ posts }) {
                {new Date(frontmatter.date).toDateString().slice(3)}
               </span>
               <a>
-                <h1 className='px-4 text-gray-200 hover:text-white cursor-pointer font-bold'>{frontmatter.title}</h1>
+                <h1 className='px-4 font-semibold'>{frontmatter.title}</h1>
               </a>
             </div>
           </Link>
