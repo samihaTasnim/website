@@ -5,20 +5,23 @@ const Navbar = () => {
 
 
   return (
-    <nav className=" py-4 md:py-8 text-gray-300">
+    <nav className="linkstyle pb-4 md:pb-8">
 
-      <div className="text-base">
+      <div className="text-xl">
         <Link href="/">
-          <a className="underline">home</a>
+          <a className="linkstyle">home</a>
         </Link>
         <Link href="/blog">
-        <a className="underline pl-4">blog</a>
+        <a className="linkstyle pl-4">blog</a>
+        </Link>
+        <Link href="/projects">
+        <a className="linkstyle pl-4">projects</a>
         </Link>
         <Link href="/resources">
-          <a className="underline pl-4">resources</a>
+          <a className="linkstyle pl-4">resources</a>
         </Link>
         <Link href="/contact">
-          <a className="underline pl-4">contact</a>
+          <a className="linkstyle pl-4">contact</a>
         </Link>
       </div>
     </nav>

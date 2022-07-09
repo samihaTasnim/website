@@ -6,8 +6,8 @@ import md from 'markdown-it';
 export default function PostPage({ frontmatter, content }) {
   return (
     <div className=''>
-      <h1 className='text-2xl'>{frontmatter.title}</h1>
-      <br />
+      <h1>{frontmatter.title}</h1>
+      <p>{new Date(frontmatter.date).toDateString().slice(3)}</p>
       <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
     </div>
   );

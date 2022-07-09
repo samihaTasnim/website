@@ -5,20 +5,18 @@ import Link from 'next/link';
 
 export default function Home({ posts }) {
   return (
-    <div className=''>
+    <div className='pt-4'>
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className='flex flex-col cursor-pointer py-2 border-2 border-transparent border-b-gray-600 hover:text-black hover:bg-white hover:px-4'
+          className='flex flex-col cursor-pointer py-2 border-2 border-transparent border-b-gray-600 hover:linkstyle'
         >
           <Link href={`/blog/${slug}`}>
             <div className='flex'>
               <span>
                {new Date(frontmatter.date).toDateString().slice(3)}
               </span>
-              <a>
-                <h1 className='px-4 font-semibold'>{frontmatter.title}</h1>
-              </a>
+                <span className='pl-4 font-semibold'>{frontmatter.title}</span>
             </div>
           </Link>
         </div>
