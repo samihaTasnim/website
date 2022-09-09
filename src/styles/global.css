@@ -26,6 +26,10 @@
 		@apply h-full scroll-smooth;
 	}
 
+	a {
+		@apply underline underline-offset-4 hover:text-link decoration-2;
+	}
+
 	html body {
 		@apply h-full max-w-3xl mx-auto px-8 pt-16 font-mono font-normal antialiased text-base leading-loose flex flex-col text-textColor bg-bgColor;
 	}

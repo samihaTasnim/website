@@ -3,7 +3,7 @@ layout: "@/layouts/BlogPost"
 title: How I got started with programming
 description: My journey of learning web developement
 publishDate: 05 February 2022
-tags: ["programming", "journey", "newbie"]
+tags: ["programming", "journey", "experience"]
 ---
 
 
