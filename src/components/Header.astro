@@ -1,0 +1,45 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+const url = new URL(Astro.request.url);
+---
+
+<ThemeToggle />
+<header>
+	<span>
+		<a
+			href="/"		
+		  class="logo"
+			aria-current={url.pathname === "/" ? "page" : false}
+		>
+			<span>sam's space</span>
+		</a>
+		<nav aria-label="Main">
+			<a href="/" aria-current={url.pathname === "/" ? "page" : false}>Home</a>
+			<a href="/resources" class="px-2" aria-current={url.pathname === "/resources" ? "page" : false}>Resources</a>
+			<a href="/posts" aria-current={url.pathname === "/posts" ? "page" : false}>Blog</a>
+		</nav>
+	</span>
+</header>
+
+<style>
+	header {
+		@apply mt-10 mb-20;
+
+		.logo {
+			@apply mt-12 md:mt-20;
+
+			> span {
+				@apply text-4xl font-bold sm:text-3xl;
+			}
+		}
+		}
+
+		nav {
+			@apply mt-2 py-2;
+
+			a {
+				@apply underline underline-offset-8 hover:text-link;
+			}
+		}
+</style>
