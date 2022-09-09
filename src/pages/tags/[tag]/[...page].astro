@@ -5,7 +5,7 @@ import { getAllTags, sortMDByDate } from "@/util";
 import type { MarkdownInstance, Page, Post } from "@/types";
 
 export async function getStaticPaths({ paginate }) {
-	const allPosts = await Astro.glob<Post>("../../posts/*.mdx");
+	const allPosts = await Astro.glob<Post>("../../posts/*.md");
 	const allPostsByDate = sortMDByDate(allPosts);
 	const allTags = getAllTags(allPostsByDate);
 
