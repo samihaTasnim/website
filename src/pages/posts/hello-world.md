@@ -1,7 +1,7 @@
 ---
 layout: "@/layouts/BlogPost"
 title: Testing testing 123!
-publishDate: 8 September 2022
+publishDate: 1 January 2022
 description: Hello world!!! This is an example blog post showcasing some of the cool stuff markdown can do.
 tags: ["example", "blog", "cool"]
 ---

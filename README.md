@@ -1,1 +1,1 @@
-My personal website built with Next.js and Tailwindcss. [Visit it](https://samihatasnim.is-a.dev/)
+My personal website built with Astro and Tailwindcss. [Visit it](https://samt.vercel.app/)
