@@ -9,7 +9,7 @@ value: 128
 import { Code } from "astro/components";
 
 
-## This is so cool!
+### This is so cool!
 
 Do variables work {frontmatter.value * 2}?
 

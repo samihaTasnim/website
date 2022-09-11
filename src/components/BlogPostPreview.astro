@@ -14,13 +14,13 @@ const postDate = getLocaleTime(date, { month: "short" });
 ---
 
 
- <time {datetime} class="min-w-[80px] md:min-w-[120px] text-gray-500">{postDate}</time>
+<time {datetime} class="min-w-[80px] md:min-w-[120px] text-gray-500">{postDate}</time>
 <Element>
 	<a href={post.url} class="inline-block cactus-link line-clamp-1">
 		{post.frontmatter.title}
 	</a>
 </Element>
-{
+{ post.frontmatter.description && 
 	withDesc && (
 		<q class="block italic line-clamp-3">{post.frontmatter.description}</q>
 	)

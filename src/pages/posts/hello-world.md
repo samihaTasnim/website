@@ -7,11 +7,11 @@ tags: ["example", "blog", "cool"]
 ---
 
 
-## Hello World
+### Hello World
 
 Following is an example blog post written in an md file. You can find me @ src/pages/posts/hello-world.md. Here you can add/update/delete details and watch the changes live when running in develop mode.
 
-## Using some markdown elements
+### Using some markdown elements
 
 Here we have a simple js code block.
 
@@ -46,7 +46,7 @@ Here is a table:
 | Juicy Apples | 1.99  |        739 |
 | Bananas      | 1.89  |          6 |
 
-## Tailwind CSS Prose styling
+### Tailwind CSS Prose styling
 
 > I'm a simple blockquote.
 > I'm styled by Tailwind CSS prose plugin
