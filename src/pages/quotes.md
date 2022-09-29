@@ -28,5 +28,5 @@ tags: ["quotes"]
 > Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
 > ~ Antoine de Saint-Exupery
 
-> The meaning of the river flowing is not that all things are changing so that we cannot encounter them twice but that some things stay the same only by changing.”
+> The meaning of the river flowing is not that all things are changing so that we cannot encounter them twice but that some things stay the same only by changing.
 > ~ Heraclitus, Heraclitus: The Cosmic Fragments
