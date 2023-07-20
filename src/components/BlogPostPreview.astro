@@ -22,6 +22,6 @@ const postDate = getLocaleTime(date, { month: "short" });
 </Element>
 { post.frontmatter.description && 
 	withDesc && (
-		<q class="block italic line-clamp-3">{post.frontmatter.description}</q>
+		<q class="block line-clamp-3 text-sm">{post.frontmatter.description}</q>
 	)
 }
