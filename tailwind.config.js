@@ -7,6 +7,9 @@ module.exports = {
 		aspectRatio: false,
 	},
 	theme: {
+		// fontFamily: {
+    //   'mono': ['ui-monospace', 'SFMono-Regular']
+    // },
 		extend: {
 			colors: {
 				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",

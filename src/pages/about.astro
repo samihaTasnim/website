@@ -7,27 +7,27 @@ const meta = {
 	description: "Well you get to know all about me right here",
 };
 
-const response = await fetch('https://gh-pinned-repos.egoist.sh/?username=samihaTasnim');
+const response = await fetch('https://gh-pinned-repos.egoist.dev/?username=samihatasnim');
 const projects = await response.json();
 ---
 
 <PageLayout meta={meta}>
 	<div class="space-y-6">
-    <p>Hi! I'm sam, a idiot but sometimes genius human being.  </p>
+    <p>Hi! I'm sam, generally an idiot but sometimes genius human being.</p>
     <ul>
       Jump to -
-      <li> <a href="#work"># Work</a> </li>
+      <li><a href="#work"># Work</a> </li>
       <li><a href="#projects"># Projects</a></li>
       <li><a href="#interests"># Interests</a> </li>
     </ul>
     <br>
     <h1 class="title">Work</h1>    
-    <p id="#work">I started my web developement journey in September 2020. From there, I came a long way to be able to intern at two companies. I also worked full time building UI parts, fixing bugs and adding extra features at Ripple Community. I had to quit because I wanted fo focus on getting good grades for uni admission but I still haven't finished my high school graduation <small class="italic">yet.</small></p>
+    <p id="work">I started my web developement journey in September 2020. From there, I came a long way to be able to intern at two companies. I also worked full time building UI parts, fixing bugs and adding extra features at Ripple Community. I had to quit because I wanted fo focus on getting good grades for uni admission but I still haven't finished my high school graduation <small class="italic">yet.</small></p>
     
     <p> Currently, I am looking into open source contribution, blogging and studying full time. I keep a <a href="/resources" class="">collection of resources</a> I found useful. They are mostly on programming, getting a job, resume tips and basic technology.</p>
     <br>
-    <h1 class="title" id="#projects">Projects</h1>    
-    <p>I mostly work with React, Next.js and JavaScript. Recently loving Typescript and TailwindCSS. I also know a bit backend involving Express.js and MongoDB. Most of my projects were built with MERN stack. Here are a couple of them - </p>
+    <h1 class="title">Projects</h1>    
+    <p id="projects">I mostly work with React, Next.js and JavaScript. Recently loving Typescript and TailwindCSS. I also know a bit backend involving Express.js and MongoDB. Most of my projects were built with MERN stack. Here are a couple of them -</p>
     <br>
     {
 			projects.map((project) => (
@@ -38,7 +38,7 @@ const projects = await response.json();
 		}
     <br>
     <h1 class="title">Interests</h1> 
-    <p id="interests">During my free time, I enjoy reading books and watching movies. My favourite genre is action so I love every MCU and DC (yes both) movie. I read a lot but mainly in my native language which is Bengali. You can see my collections of favourite quotes <a href="/quotes" class="">here</a>. I appear occasionaly on discord servers to hang out. My discord tag is <span class="underline underline-offset-4 decoration-2">sam.#7750</span> I also consume knowledge about various things on a weekly basis based on my current topic of interest.</p>
+    <p id="interests">During my free time, I enjoy reading books and watching movies. My favourite genre is action so I love every MCU and DC (yes both) movie. I read a lot but mainly in my native language which is Bengali. You can see my collections of favourite quotes <a href="/quotes" class="">here</a>. I appear occasionaly on discord servers to hang out. My discord tag is <span class="underline underline-offset-4 decoration-2">samihatasnim</span> I also consume knowledge about various things on a weekly basis based on my current topic of interest.</p>
     <SocialList />
 	</div>
 </PageLayout>
