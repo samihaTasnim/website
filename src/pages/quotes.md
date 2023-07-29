@@ -14,6 +14,9 @@ tags: ["quotes"]
 > বন্ধুত্ব তখনই গাড় হয় যখন কেও কাওকে চেনে না 
 > ~ হিমু এবং হার্ভার্ড পিএইচডি বল্টু ভাই
 
+> আমি যা বলেছিলাম তা হল প্রশ্নের একটিই উত্তর । হয় হ্যাঁ কিংবা না । কিন্তু মানুষ যেহেতু অস্বাভাবিক একটি প্রাণী সে দুটি উত্তরই একই সঙ্গে গ্রহণ করে ; যদিও সে জানে উত্তর হবে একটি। 
+> ~ আমি ও আমরা, হুমায়ুন আহমেদ
+
 > জীবন বড় মধুময় শুধু এইজন্য যে, এই মাধুর্যের অনেকটাই স্বপ্ন ও কল্পনা দিয়া গড়া। হোক না স্বপ্ন মিথ্যা, কল্পনা বাস্তবতার লেশশূন্য; নাই বা থাকিল সবসময় তাহাদের পিছনে স্বার্থকতা; তাহারাই যে জীবনের শ্রেষ্ঠ সম্পদ, তাহারা আসুক, জীবনে অক্ষয় হোক তাহাদের আসন; তুচ্ছ স্বার্থকতা, তুচ্ছ লাভ।”
 > ~ Bibhutibhushan Bandyopadhyay, Pather Panchali
 
@@ -23,6 +26,9 @@ tags: ["quotes"]
 > People who read are hiders. They hide who they are. People who hide don't always like who they are.
 > ~ André Aciman, Call Me by Your Name
 
+> And, when you want something, all the universe conspires in helping you to achieve it.
+> ~ Paulo Coelho, The Alchemist
+
 
 ### Person quotes
 > Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
@@ -30,3 +36,10 @@ tags: ["quotes"]
 
 > The meaning of the river flowing is not that all things are changing so that we cannot encounter them twice but that some things stay the same only by changing.
 > ~ Heraclitus, Heraclitus: The Cosmic Fragments
+
+> One day, in retrospect, the years of struggle will strike you as the most beautiful.
+>  ~ Sigmund Freud
+
+### Movies and series quotes
+> There are certain things in life where you know it’s a mistake, but you don’t really know it’s a mistake because the only way to know that it really is a mistake is to make that mistake and go, “Yup, that was a mistake”. So really, the bigger mistake would be to not make the mistake because then you’ll go about your whole life not knowing whether it was a mistake or not.
+> ~ season 1 episode 21 of “How I Met Your Mother?”
