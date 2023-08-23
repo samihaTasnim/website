@@ -7,7 +7,6 @@ const siteMeta = {
   githubUrl: "https://github.com/samihaTasnim/website",
   themeColorLight: "#fafafa",
   themeColorDark: "#1d1f21"
-  >
 }
 
 export default siteMeta;

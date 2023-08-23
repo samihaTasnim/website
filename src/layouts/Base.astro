@@ -18,6 +18,7 @@ const {
 <html lang={siteMeta.lang}>
 	<head>
 		<BaseHead title={title} description={description} image={image} />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<script define:vars={{ siteMeta }}>
 			const root = document.documentElement;
 			const colorThemeMetaTag = document.querySelector(
