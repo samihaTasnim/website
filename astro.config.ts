@@ -9,11 +9,11 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	site: "https://sam.devpage.me/",
+	site: "https://samihatasnim.vercel.app",
 	integrations: [
 		tailwind({
 			config: { applyBaseStyles: false },
 		}),
-		sitemap(),
+		[sitemap()],
 	],
 });
