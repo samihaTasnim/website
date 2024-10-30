@@ -29,6 +29,13 @@ tags: ["quotes"]
 > And, when you want something, all the universe conspires in helping you to achieve it.
 > ~ Paulo Coelho, The Alchemist
 
+> এই বিশ্বব্রহ্মাণ্ডের সমস্তটাই পরিপূর্ণ সত্য।
+মিথ্যার অস্তিত্ব যদি কোথাও থাকে, 
+তবে সে মনুষ্যের মন ছাড়া আর কোথাও না।
+> ~ শ্রীকান্ত: প্রথম পর্ব, শ্রী শরৎচন্দ্র চট্টোপাধ্যায়
+
+
+
 
 ### Person quotes
 > Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
